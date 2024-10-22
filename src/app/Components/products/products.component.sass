@@ -1,15 +1,8 @@
-.products 
-    margin: 10% !important
-    margin-top: 0 !important
-    padding-top: 5%
-    padding-bottom: 5%
-    margin-bottom: 0 !important
-
 .product-img 
-    width: 250px
+    width: 346.67px
     height: 250px
     cursor: pointer
-    
+
 span 
     font-size: 24px
     font-family: "Bricolage Grotesque", sans-serif
@@ -21,17 +14,45 @@ span
 
 #product-head
     width:100%
-    gap: 50%
-    .col 
-        flex: 100
-    
-.col 
-    flex: 0
+
+.modal-dialog 
+    width: 100%
+    max-width: 800px
+    padding: 24px
+
+h6 
+    font-size: 20px
+    font-family: "Bricolage Grotesque", sans-serif
+    color: #0C5AA8
+
+.product 
+    padding: 16px
+    background-color: rgba(12,90,168,.05)
+    margin: 16px
+
 
 @media (max-width:576px) 
-  .product-img 
-    width: 158px
-    height: 158px
-    border-radius: 40px !important
+  .products
+    padding: 0 
+    margin: 40px 20px 
   span 
     font-size: 20px   
+
+@media (min-width:768px) 
+    .product-img 
+      width: 690px
+      height: 160px
+    .products
+      margin: 40px
+      padding: 0
+@media (min-width:1024px) 
+   .products 
+     margin: 10% 
+     margin-top: 0 
+     padding-top: 5%
+     padding-bottom: 5%
+     margin-bottom: 0 
+   .product-img 
+      width: 346.67px
+      height: 250px
+      cursor: pointer

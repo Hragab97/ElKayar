@@ -1,23 +1,9 @@
-.about 
-    padding: 5%
-    padding-top: 0
-    padding-bottom: 0
-    padding-right: 0
-    margin: 10% !important
-    margin-top: 0 !important
-    margin-bottom: 0 !important
-
-#history
-    padding: 5%
-
-
 #keydates
-    padding-bottom: 5%
-
+    padding-bottom: 80px
+    
 span 
     font-size: 12px
     opacity: 0.5
-
 
 h1
     margin: 0
@@ -27,7 +13,44 @@ h1
     padding: 5%
     padding-top: 0
     padding-bottom: 0
-    margin: 3% !important
     h1
         font-size: 60px
     
+@media (max-width:576px) 
+    .about,.statistics
+        padding: 40px 0 
+        padding-bottom: 0 
+        margin: 0 
+
+    #keydates
+        padding-bottom: 40px
+    #history
+        padding: 20px    
+
+@media (min-width:768px) 
+      .statistics
+        padding: 0 
+        margin: 40px 
+      .about 
+         margin: 40px 
+         padding-top: 0 
+         padding-bottom: 0 
+         padding-left: 0 
+        
+      #history
+          padding: 60px   
+
+@media (min-width:1024px) 
+   .about 
+      margin: 160px 
+      margin-top: 0 
+      margin-bottom: 0 
+   .statistics
+      padding: 5%
+      padding-top: 0
+      padding-bottom: 0
+      margin: 160px
+      margin-top: 0 
+      margin-bottom: 0 
+   #history
+      padding: 60px

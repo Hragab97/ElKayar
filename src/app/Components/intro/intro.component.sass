@@ -1,10 +1,4 @@
 .map
-  margin: 10% !important
-  padding-top: 5%
-  padding-bottom: 5%
-  margin-top: 0 !important
-  margin-right: 0 !important
-  margin-bottom: 0 !important
   background-repeat: no-repeat
   background-image: url("/assets/images/INTRO/map.png")
   background-position: right
@@ -12,6 +6,8 @@
 
 .btn
     font-size: 12px !important
+    background-color: #0C5AA8 
+    color: #fff
 
 p 
     font-size: 18px
@@ -24,10 +20,42 @@ span
     margin-bottom: 2%
     margin-top: 3%
 
-@media (max-width:576px) 
-    span 
-        margin-top: 10%
-    
 h1 
     font-size: 53px
+    margin-bottom: 32px
 
+
+@media (max-width:576px) 
+    .map
+        padding: 0 !important
+        margin: 40px 20px !important
+    span 
+        margin-top: 10%
+    h1 
+        font-size: 38px
+    p 
+        font-size: 16px
+    a
+        width: 100% 
+@media (min-width:768px) 
+    .map
+       margin: 40px
+       padding-top: 5%
+       padding-bottom: 5%
+       margin-top: 0 
+       margin-bottom: 0 
+    a
+        width: 100% 
+    
+
+@media (min-width:1024px) 
+    .map
+       margin: 160px
+       padding-top: 5%
+       padding-bottom: 5%
+       margin-top: 0 
+       margin-right: 0 
+       margin-bottom: 0 
+    a
+        width: auto
+  
