@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
+import { SearchPipe } from '../../Pipes/search.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [],
+  imports: [SearchPipe, FormsModule],
   templateUrl: './products.component.html',
   styleUrl: './products.component.sass'
 })
 export class ProductsComponent {
+
+  searchGlassDetergentsCeramics: string = "";
+  searchFoodIndustries: string= "";
+  searchPaintIndustries: string= "";
 
   glassDetergentsCeramics:String[] = [
     "Aluminum Oxide / Hydrate",
@@ -58,7 +64,7 @@ export class ProductsComponent {
     "Shellac",
     "Sodium Benzoate",
     "Sodium Bicarbonate",
-    "Sodium Hexametaphosphate",
+    "Sodium Hexameta-phosphate",
     "Sodium Metabisulphate",
     "Sodium Metasilicate (Penta)",
     "Sodium Nitrite",

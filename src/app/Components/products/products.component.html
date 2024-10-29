@@ -41,7 +41,14 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center align-items-center row">
-                                @for (product of glassDetergentsCeramics; track $index) {
+                                    <div class="form-floating">
+                                        <input [(ngModel)]="searchGlassDetergentsCeramics" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
+                                        <label class="d-flex justify-content-center align-items-center" for="floatingInput"> <img
+                                                src="assets/images/search icon.png" class="mx-2" width="18" alt="">
+                                            <div>Search Product</div>
+                                        </label>
+                                    </div>
+                                @for (product of glassDetergentsCeramics | search : searchGlassDetergentsCeramics ; track $index) {
                                 <div class="col-3 product rounded-1 text-center">
                                     <h6 class="fw-bold">{{product}}</h6>
                                 </div>
@@ -74,7 +81,14 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center align-items-center row">
-                                @for (product of foodIndustries; track $index) {
+                                <div class="form-floating">
+                                    <input [(ngModel)]="searchFoodIndustries" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
+                                    <label class="d-flex justify-content-center align-items-center" for="floatingInput"> <img
+                                            src="assets/images/search icon.png" class="mx-2" width="18" alt="">
+                                        <div>Search Product</div>
+                                    </label>
+                                </div>
+                                @for (product of foodIndustries | search : searchFoodIndustries; track $index) {
                                 <div class="col-3 product rounded-1 text-center">
                                     <h6 class="fw-bold">{{product}}</h6>
                                 </div>
@@ -107,7 +121,14 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center align-items-center row">
-                                @for (product of paintIndustries; track $index) {
+                                <div class="form-floating">
+                                    <input [(ngModel)]="searchPaintIndustries" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
+                                    <label class="d-flex justify-content-center align-items-center" for="floatingInput"> <img
+                                            src="assets/images/search icon.png" class="mx-2" width="18" alt="">
+                                        <div>Search Product</div>
+                                    </label>
+                                </div>
+                                @for (product of paintIndustries | search : searchPaintIndustries; track $index) {
                                 <div class="col-3 product rounded-1 text-center">
                                     <h6 class="fw-bold">{{product}}</h6>
                                 </div>
