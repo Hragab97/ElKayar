@@ -32,13 +32,13 @@
                             </div>
                             <div class="modal-body d-flex justify-content-center align-items-center row">
                                     <div class="form-floating">
-                                        <input [(ngModel)]="searchGlassDetergentsCeramics" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
+                                        <input [(ngModel)]="searchCeramicsGlass" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
                                         <label class="d-flex justify-content-center align-items-center mx-2" for="floatingInput"> <img
                                                 src="assets/images/search icon.png" class="mx-2" width="18" alt="">
                                             <div>Search Product</div>
                                         </label>
                                     </div>
-                                @for (product of glassDetergentsCeramics | search : searchGlassDetergentsCeramics ; track $index) {
+                                @for (product of ceramicsGlass | search : searchCeramicsGlass ; track $index) {
                                 <div class="col-3 product rounded-1 text-center">
                                     <h6 class="fw-bold">{{product}}</h6>
                                 </div>
@@ -66,19 +66,19 @@
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Food Industries</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Industrial Chemicals, Detergents & Fertilizers</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center align-items-center row">
                                 <div class="form-floating">
-                                    <input [(ngModel)]="searchFoodIndustries" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
+                                    <input [(ngModel)]="searchIndustrialChemicalsDetergentsFertilizers" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
                                     <label class="d-flex justify-content-center align-items-center mx-2" for="floatingInput"> <img
                                             src="assets/images/search icon.png" class="mx-2" width="18" alt="">
                                         <div>Search Product</div>
                                     </label>
                                 </div>
-                                @for (product of foodIndustries | search : searchFoodIndustries; track $index) {
+                                @for (product of industrialChemicalsDetergentsFertilizers | search : searchIndustrialChemicalsDetergentsFertilizers; track $index) {
                                 <div class="col-3 product rounded-1 text-center">
                                     <h6 class="fw-bold">{{product}}</h6>
                                 </div>
@@ -106,19 +106,19 @@
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Paints industries</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"> Pharmaceutical, Food & Feed additives</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center align-items-center row">
                                 <div class="form-floating">
-                                    <input [(ngModel)]="searchPaintIndustries" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
+                                    <input [(ngModel)]="searchPharmaceuticalFoodFeedadditives" type="search" class="form-control w-100" id="floatingInput" placeholder="search product">
                                     <label class="d-flex justify-content-center align-items-center mx-2" for="floatingInput"> <img
                                             src="assets/images/search icon.png" class="mx-2" width="18" alt="">
                                         <div>Search Product</div>
                                     </label>
                                 </div>
-                                @for (product of paintIndustries | search : searchPaintIndustries; track $index) {
+                                @for (product of pharmaceuticalFoodFeedadditives | search : searchPharmaceuticalFoodFeedadditives; track $index) {
                                 <div class="col-3 product rounded-1 text-center">
                                     <h6 class="fw-bold">{{product}}</h6>
                                 </div>
